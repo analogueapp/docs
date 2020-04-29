@@ -1,81 +1,42 @@
 module.exports = {
   title: 'Analogue',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
+  tagline: 'Documentation',
+  url: 'https://analogue.app',
   baseUrl: '/',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
   organizationName: 'analogue-app', // Usually your GitHub org/user name.
-  projectName: 'Analogue', // Usually your repo name.
+  projectName: 'analogue', // Usually your repo name.
   themeConfig: {
+    // TODO add algolia search
+    // algolia: {
+    //   apiKey: '766d56f13dd1e82f43253559b7c86636',
+    //   indexName: 'supabase',
+    // },
+    defaultDarkMode: true,
+    darkMode: true,
+    image: 'img/analogue-og.png',
+
     navbar: {
-      title: 'Analogue',
+      hideOnScroll: true,
       logo: {
         alt: 'Analogue',
-        src: 'img/logo.svg',
+        src: 'img/logo_icon.png',
+        href: 'https://analogue.app/about'
       },
       links: [
         {
-          to: 'docs/doc1',
-          activeBasePath: 'docs',
           label: 'Docs',
+          to: 'docs/api',
+          activeBasePath: 'docs',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/analogue-app/docs',
-          label: 'GitHub',
+          href: 'https://github.com/analogue-app',
           position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
         },
       ],
-    },
-    footer: {
-      style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Style Guide',
-              to: 'docs/doc1',
-            },
-            {
-              label: 'Second Doc',
-              to: 'docs/doc2',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: 'blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} Analogue Network, Inc. Built with Docusaurus.`,
     },
   },
   presets: [
@@ -86,13 +47,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/analogue-app/docs/edit/master/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/analogue-app/docs/edit/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
