@@ -14,7 +14,7 @@ module.exports = {
     // },
     defaultDarkMode: true,
     darkMode: true,
-    image: 'img/analogue-og.png',
+    image: 'https://analogue.onrender.com/img/analogue-og.png',
 
     navbar: {
       hideOnScroll: true,
