@@ -1,6 +1,13 @@
-# Website
+# Analogue Documentation
+<a href="https://www.codefactor.io/repository/github/analogue-app/docs"><img src="https://www.codefactor.io/repository/github/analogue-app/docs/badge" alt="CodeFactor" /></a>
 
-This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
+This is the public documentation for [**Analogue**](https://analogue.app), built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
+
+You can view this documentation at https://analogue.onrender.com/docs/api.
+
+## What is Analogue?
+
+Analogue is a platform for curating influential content. It's a social database for all your cultural consumption — your books, films, podcasts, albums and articles.# Website
 
 ### Installation
 
@@ -26,8 +33,4 @@ This command generates static content into the `build` directory and can be serv
 
 ### Deployment
 
-```
-$ GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Hosted on [Render](https://render.com), so commits to `master` automatically deploy.
