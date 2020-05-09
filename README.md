@@ -1,5 +1,4 @@
-# Analogue Documentation
-<a href="https://www.codefactor.io/repository/github/analogue-app/docs"><img src="https://www.codefactor.io/repository/github/analogue-app/docs/badge" alt="CodeFactor" /></a>
+# Analogue API Documentation [![CodeFactor](https://www.codefactor.io/repository/github/analogue-app/docs/badge)](https://www.codefactor.io/repository/github/analogue-app/docs)
 
 This is the public documentation for [**Analogue**](https://analogue.app), built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
 
