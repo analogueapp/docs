@@ -10,6 +10,7 @@ module.exports = {
     ],
     Collection: [
       'collection/collections',
+      'collection/primers',
     ]
   },
 };
