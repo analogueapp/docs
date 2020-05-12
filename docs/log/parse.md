@@ -5,7 +5,7 @@ title: Parse
 
 ### `POST /contents/parse`
 
-For creating a new `Log` from a given URL. Returns existing `Log` if URL is already in your library.
+Create a new `Log` from a given URL. Returns existing `Log` if URL is already in your library.
 
 ### Params
 

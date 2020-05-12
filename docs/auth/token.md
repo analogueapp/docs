@@ -9,7 +9,7 @@ First, authorize using this endpoint to get an authorization token, which you ca
 
 ### `POST /user/login`
 
-For obtaining access token.
+Obtain an access token.
 
 ### Params
 

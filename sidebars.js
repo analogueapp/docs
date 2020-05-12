@@ -7,6 +7,9 @@ module.exports = {
     ],
     Log: [
       'log/parse',
+    ],
+    Collection: [
+      'collection/collections',
     ]
   },
 };
