@@ -11,6 +11,7 @@ module.exports = {
     Collection: [
       'collection/collections',
       'collection/primers',
+      'collection/logs',
     ]
   },
 };
