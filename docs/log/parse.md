@@ -18,7 +18,13 @@ Parameter | Type | Required | Description
 ```javascript
 import axios from 'axios'
 
-axios.post(`https://analogue.app/api/contents/parse?url=${url_to_parse}`)
+axios.post(`https://analogue.app/api/contents/parse?url=${url_to_parse}`, {
+    method: 'POST',
+    headers: {
+        'Authorization': '{authToken>',
+    },
+    json: true
+  })
 .then((response) => {
   // do something with response
 })
