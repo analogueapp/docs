@@ -7,7 +7,11 @@ title: Logs
 
 Retrieve a rich list of logs for a given `Collection` or `Primer`.
 
-If auth token is passed and `username` is equal to the auth token username, then it will also return `private` logs.
+:::note Auth token
+If an auth token is passed and `username` is equal to the auth token's associated username, then it will also return `private` logs.
+Grab your token using the [Authorization endpoint](auth/token.md).
+:::
+
 
 ### Collection Mediums
 

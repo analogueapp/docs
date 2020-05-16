@@ -5,7 +5,12 @@ title: Primers
 
 ### `GET /primers`
 
-Retrieve rich list of user created collections for a given user, aka `Primers`.
+Retrieve rich list of user created collections for a given user. The data model is named `Primer`, hence the endpoint name.
+
+:::note Auth token
+If an auth token is passed and `username` is equal to the auth token's associated username, then it will also return `private` collections.
+Grab your token using the [Authorization endpoint](auth/token.md).
+:::
 
 ### Params
 
