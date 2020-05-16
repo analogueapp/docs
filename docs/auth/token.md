@@ -1,6 +1,6 @@
 ---
 id: token
-title: Access Token
+title: Authorization Token
 ---
 
 The API uses [JWT](https://jwt.io/introduction/) for authentication.
@@ -13,7 +13,7 @@ Authorization tokens automatically expire in 60 days.
 
 ### `POST /user/login`
 
-Obtain an access token.
+Obtain an authorization token.
 
 ### Params
 
@@ -26,26 +26,52 @@ Parameter | Type | Required | Description
 
 ### Example
 
-```javascript
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  defaultValue="bash"
+  values={[
+    { label: 'Shell', value: 'bash', },
+    { label: 'JavaScript', value: 'js', },
+  ]
+}>
+<TabItem value="js">
+
+```js
 import axios from 'axios'
 
 axios.post(
   'https://analogue.app/api/users/login', // Endpoint
   {
     user: {
-      email: '',
-      password: ''
+      email: `${your_email}`,
+      password: `${your_password}`
     }
-  }, // Payload
+  },
 ).then((response) => {
   // Securely store token to use for authorization
-  console.log(response.user.token)
 })
 ```
 
+</TabItem>
+
+<TabItem value="bash">
+
+```bash
+curl \
+  -H 'Content-Type: application/json' \
+  -X POST \
+  -d '{"user": { "email" "<your_email>", "password": "<your_password>" }}' \
+  https://analogue.app/api/users/login
+```
+
+</TabItem>
+</Tabs>
+
 ### Response
 
-```json
+```json {10}
 {
   "user": {
     "id": 1,
