@@ -85,3 +85,38 @@ curl \
   }
 }
 ```
+
+## Authorized Endpoints
+
+For authorized endpoints, Analogue expects for the JWT `token` received from `Login` to be included in the header of the request.
+
+<Tabs
+  defaultValue="bash"
+  values={[
+    { label: 'Shell', value: 'bash', },
+    { label: 'JavaScript', value: 'js', },
+  ]
+}>
+<TabItem value="js">
+
+```js
+import axios from 'axios'
+
+axios.post('https://analogue.app/api/<some_authed_endpoint>', payload, {
+  headers: { authorization: `Token ${authToken}` }
+})
+```
+
+</TabItem>
+
+<TabItem value="bash">
+
+```bash
+curl \
+  -H "authorization: Token <authToken>" \
+  -X POST \
+  https://analogue.app/api/<some_authed_endpoint>
+```
+
+</TabItem>
+</Tabs>
