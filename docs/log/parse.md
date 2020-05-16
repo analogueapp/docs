@@ -21,7 +21,7 @@ import axios from 'axios'
 axios.post(`https://analogue.app/api/contents/parse?url=${url_to_parse}`, {
     method: 'POST',
     headers: {
-        'Authorization': '{authToken>',
+        'Authorization': '{authToken}',  // grab your token using https://analogue.onrender.com/docs/auth/token
     },
     json: true
   })
