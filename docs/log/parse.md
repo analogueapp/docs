@@ -16,7 +16,7 @@ Parameter | Type | Required | Description
 ### Example
 
 :::note Auth Required
-Grab your token using the [Auth endpoint](auth/token.md).
+Grab your token using the [Authorization endpoint](auth/token.md).
 :::
 
 import Tabs from '@theme/Tabs';

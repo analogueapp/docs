@@ -92,11 +92,11 @@ axios.get(`https://www.analogue.app/api/primers?username=${username}&tag=${tag}&
 
 ### `GET /user/primers`
 
-`Auth required` Retrieve a simple list of all user created collections for logged in user
+Retrieve a simple list of all user created collections for logged in user.
 
-### Params
-
-Doesn't accept parameters. Must pass in auth `token`.
+:::note Auth Required
+Grab your token using the [Authorization endpoint](auth/token.md).
+:::
 
 ### Example
 
