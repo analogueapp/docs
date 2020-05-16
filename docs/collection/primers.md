@@ -1,6 +1,6 @@
 ---
 id: primers
-title: Primers
+title: User Created Collections
 ---
 
 ### `GET /primers`
@@ -23,7 +23,19 @@ Parameter | Type | Required | Description
 
 ### Example
 
-```javascript
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  defaultValue="bash"
+  values={[
+    { label: 'Shell', value: 'bash', },
+    { label: 'JavaScript', value: 'js', },
+  ]
+}>
+<TabItem value="js">
+
+```js
 import axios from 'axios'
 
 axios.get(`https://www.analogue.app/api/primers?username=${username}&tag=${tag}&limit=8&offset=0`)
@@ -31,6 +43,17 @@ axios.get(`https://www.analogue.app/api/primers?username=${username}&tag=${tag}&
   // do something
 })
 ```
+
+</TabItem>
+
+<TabItem value="bash">
+
+```bash
+curl https://www.analogue.app/api/primers?username=<username>&tag=<tag>&limit=8&offset=0
+```
+
+</TabItem>
+</Tabs>
 
 ### Response
 
@@ -105,7 +128,16 @@ Grab your token using the [Authorization endpoint](auth/token.md).
 
 ### Example
 
-```javascript
+<Tabs
+  defaultValue="bash"
+  values={[
+    { label: 'Shell', value: 'bash', },
+    { label: 'JavaScript', value: 'js', },
+  ]
+}>
+<TabItem value="js">
+
+```js
 import axios from 'axios'
 
 axios.get('https://www.analogue.app/user/primers')
@@ -113,6 +145,17 @@ axios.get('https://www.analogue.app/user/primers')
   // do something
 })
 ```
+
+</TabItem>
+
+<TabItem value="bash">
+
+```bash
+curl -H "authorization: Token <authToken>" https://www.analogue.app/user/primers
+```
+
+</TabItem>
+</Tabs>
 
 ### Response
 

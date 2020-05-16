@@ -39,31 +39,74 @@ Parameter | Type | Required | Description
 `limit` | number | | Limit the results, default = 9
 `offset` | number | | Pagination offset
 
+### Examples
 
+Retreiving all logs for a `Collection` specified by `medium`:
 
-### Example
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-Retreiving all logs for a `Collection` specified by `medium`.
+<Tabs
+  defaultValue="bash"
+  values={[
+    { label: 'Shell', value: 'bash', },
+    { label: 'JavaScript', value: 'js', },
+  ]
+}>
+<TabItem value="js">
 
-```javascript
+```js
 import axios from 'axios'
 
-axios.get(`logs?username=${username}&medium=${medium}&limit=8&offset=0&collection=true`)
+axios.get(`https://analogue.app/api/logs?username=${username}&medium=${medium}&limit=8&offset=0&collection=true`)
 .then((response) => {
   // do something
 })
 ```
 
-Retreiving all logs for a specific `Primer`.
+</TabItem>
 
-```javascript
+<TabItem value="bash">
+
+```bash
+curl https://analogue.app/api/logs?username=<username>&medium=<medium>&limit=8&offset=0&collection=true
+```
+
+</TabItem>
+</Tabs>
+
+<br />
+
+Retreiving all logs for a specific `Primer`:
+
+<Tabs
+  defaultValue="bash"
+  values={[
+    { label: 'Shell', value: 'bash', },
+    { label: 'JavaScript', value: 'js', },
+  ]
+}>
+<TabItem value="js">
+
+```js
 import axios from 'axios'
 
-axios.get(`logs?username=${username}&primer_slug=${primer_slug}&limit=8&offset=0`)
+axios.get(`https://analogue.app/api/logs?username=${username}&primer_slug=${primer_slug}&limit=8&offset=0`)
 .then((response) => {
   // do something
 })
 ```
+
+</TabItem>
+
+<TabItem value="bash">
+
+```bash
+curl https://analogue.app/api/logs?username=<username>&primer_slug=<primer_slug>&limit=8&offset=0
+```
+
+</TabItem>
+</Tabs>
 
 ### Response
 
