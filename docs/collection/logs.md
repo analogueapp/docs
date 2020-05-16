@@ -9,6 +9,20 @@ Retrieve a rich list of logs for a given `Collection` or `Primer`.
 
 If auth token is passed and `username` is equal to the auth token username, then it will also return `private` logs.
 
+### Collection Mediums
+
+Mediums for auto generated `Collections` can be one of the following:
+
+[]() | []()
+-- | ----
+🔗 | `links`
+▶️ | `videos`
+📚 | `books`
+🎬 | `films`
+🎙 | `podcasts`
+🎧 | `music`
+📺 | `tv`
+
 ### Params
 
 Parameter | Type | Required | Description
@@ -21,21 +35,7 @@ Parameter | Type | Required | Description
 `limit` | number | | Limit the results, default = 9
 `offset` | number | | Pagination offset
 
-### Mediums
 
-Mediums can be one of the following:
-
-```javascript
-[
-  'links',
-  'videos',
-  'books',
-  'films',
-  'tv',
-  'podcasts',
-  'music',
-]
-```
 
 ### Example
 
