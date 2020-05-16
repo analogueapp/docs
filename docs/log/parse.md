@@ -15,14 +15,28 @@ Parameter | Type | Required | Description
 
 ### Example
 
-```javascript
+:::note Auth Required
+Grab your token using the [Authorization endpoint](auth/token.md).
+:::
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  defaultValue="bash"
+  values={[
+    { label: 'Shell', value: 'bash', },
+    { label: 'JavaScript', value: 'js', },
+  ]
+}>
+<TabItem value="js">
+
+```js
 import axios from 'axios'
 
 axios.post(`https://analogue.app/api/contents/parse?url=${url_to_parse}`, {
     method: 'POST',
     headers: {
-        // Grab your token using auth endpoint
-        // https://analogue.onrender.com/docs/auth/token
         authorization: `Token ${authToken}`,  
     },
     json: true
@@ -31,6 +45,20 @@ axios.post(`https://analogue.app/api/contents/parse?url=${url_to_parse}`, {
   // do something with response
 })
 ```
+
+</TabItem>
+
+<TabItem value="bash">
+
+```bash
+curl \
+  -H "authorization: Token <authToken>" \
+  -X POST \
+  https://analogue.app/api/contents/parse?url=<url_to_parse>
+```
+
+</TabItem>
+</Tabs>
 
 ### Response
 

@@ -1,6 +1,6 @@
 ---
 id: collections
-title: Collections
+title: Auto Generated Collections
 ---
 
 ### `GET /profiles/{username}/collections`
@@ -15,7 +15,19 @@ Parameter | Type | Required | Description
 
 ### Example
 
-```javascript
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  defaultValue="bash"
+  values={[
+    { label: 'Shell', value: 'bash', },
+    { label: 'JavaScript', value: 'js', },
+  ]
+}>
+<TabItem value="js">
+
+```js
 import axios from 'axios'
 
 axios.get(`https://analogue.app/api/profile/${username}/collections`)
@@ -23,6 +35,17 @@ axios.get(`https://analogue.app/api/profile/${username}/collections`)
   // do something
 })
 ```
+
+</TabItem>
+
+<TabItem value="bash">
+
+```bash
+curl https://analogue.app/api/profile/<username>/collections
+```
+
+</TabItem>
+</Tabs>
 
 ### Response
 

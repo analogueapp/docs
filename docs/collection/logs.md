@@ -7,7 +7,25 @@ title: Logs
 
 Retrieve a rich list of logs for a given `Collection` or `Primer`.
 
-If auth token is passed and `username` is equal to the auth token username, then it will also return `private` logs.
+:::note Auth token
+If an auth token is passed and `username` is equal to the auth token's associated username, then it will also return `private` logs.
+Grab your token using the [Authorization endpoint](auth/token.md).
+:::
+
+
+### Collection Mediums
+
+Mediums for auto generated `Collections` can be one of the following:
+
+[]() | []()
+-- | ----
+🔗 | `links`
+▶️ | `videos`
+📚 | `books`
+🎬 | `films`
+🎙 | `podcasts`
+🎧 | `music`
+📺 | `tv`
 
 ### Params
 
@@ -21,45 +39,74 @@ Parameter | Type | Required | Description
 `limit` | number | | Limit the results, default = 9
 `offset` | number | | Pagination offset
 
-### Mediums
+### Examples
 
-Mediums can be one of the following:
+Retreiving all logs for a `Collection` specified by `medium`:
 
-```javascript
-[
-  'links',
-  'videos',
-  'books',
-  'films',
-  'tv',
-  'podcasts',
-  'music',
-]
-```
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-### Example
+<Tabs
+  defaultValue="bash"
+  values={[
+    { label: 'Shell', value: 'bash', },
+    { label: 'JavaScript', value: 'js', },
+  ]
+}>
+<TabItem value="js">
 
-Retreiving all logs for a `Collection` specified by `medium`.
-
-```javascript
+```js
 import axios from 'axios'
 
-axios.get(`logs?username=${username}&medium=${medium}&limit=8&offset=0&collection=true`)
+axios.get(`https://analogue.app/api/logs?username=${username}&medium=${medium}&limit=8&offset=0&collection=true`)
 .then((response) => {
   // do something
 })
 ```
 
-Retreiving all logs for a specific `Primer`.
+</TabItem>
 
-```javascript
+<TabItem value="bash">
+
+```bash
+curl https://analogue.app/api/logs?username=<username>&medium=<medium>&limit=8&offset=0&collection=true
+```
+
+</TabItem>
+</Tabs>
+
+<br />
+
+Retreiving all logs for a specific `Primer`:
+
+<Tabs
+  defaultValue="bash"
+  values={[
+    { label: 'Shell', value: 'bash', },
+    { label: 'JavaScript', value: 'js', },
+  ]
+}>
+<TabItem value="js">
+
+```js
 import axios from 'axios'
 
-axios.get(`logs?username=${username}&primer_slug=${primer_slug}&limit=8&offset=0`)
+axios.get(`https://analogue.app/api/logs?username=${username}&primer_slug=${primer_slug}&limit=8&offset=0`)
 .then((response) => {
   // do something
 })
 ```
+
+</TabItem>
+
+<TabItem value="bash">
+
+```bash
+curl https://analogue.app/api/logs?username=<username>&primer_slug=<primer_slug>&limit=8&offset=0
+```
+
+</TabItem>
+</Tabs>
 
 ### Response
 

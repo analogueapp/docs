@@ -3,7 +3,6 @@ module.exports = {
     About: ['api'],
     Authentication: [
       'auth/token',
-      'auth/authorization'
     ],
     Log: [
       'log/parse',

@@ -9,12 +9,12 @@ Welcome to the Analogue API. You can use this public API to access and modify yo
 
 We've build our apps on top of this same API:
 
-- [Analogue Alfred Powerpack](https://www.analogue.app/alfred)
+- [Analogue Alfred Workflow](https://www.analogue.app/alfred)
 - [Analogue Browser Extension](https://www.analogue.app/extension)
 
 ### API Root URL
 
-```javascript
+```bash
 https://analogue.app/api/
 ```
 
@@ -22,4 +22,4 @@ The Analogue API is organized following [REST](https://en.wikipedia.org/wiki/Rep
 
 ### Contact
 
-If you have any issues or questions, or want to submit an example of something you've built with our API, email us at info@analogue.app
+If you have any issues or questions, or want to submit an example of something you've built with our API, email us at info@analogue.app.
