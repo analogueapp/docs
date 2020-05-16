@@ -18,7 +18,15 @@ Parameter | Type | Required | Description
 ```javascript
 import axios from 'axios'
 
-axios.post(`https://analogue.app/api/contents/parse?url=${url_to_parse}`)
+axios.post(`https://analogue.app/api/contents/parse?url=${url_to_parse}`, {
+    method: 'POST',
+    headers: {
+        // Grab your token using auth endpoint
+        // https://analogue.onrender.com/docs/auth/token
+        authorization: `Token ${authToken}`,  
+    },
+    json: true
+  })
 .then((response) => {
   // do something with response
 })
