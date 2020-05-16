@@ -7,6 +7,10 @@ The API uses [JWT](https://jwt.io/introduction/) for authentication.
 
 First, authorize using this endpoint to get an authorization token, which you can then pass through as an Authorization header for authenticated endpoints.
 
+:::note Token Expiration
+Authorization tokens automatically expire in 60 days.
+:::
+
 ### `POST /user/login`
 
 Obtain an access token.
