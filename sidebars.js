@@ -11,6 +11,7 @@ module.exports = {
       'collection/collections',
       'collection/primers',
       'collection/logs',
+      'collection/embed',
     ]
   },
 };
