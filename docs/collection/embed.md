@@ -16,7 +16,7 @@ https://www.analogue.app/collection/readings-4vyfd8
 https://www.analogue.app/collection/readings-4vyfd8/embed
 ```
 
-![Analogue collection embed example](../../static/img/embed.gif)
+![Analogue collection embed example](https://analogue.onrender.com/img/embed.gif)
 
 ### Options
 
