@@ -25,7 +25,7 @@ The default mode is dark and a 3 column grid, but we support light might and a 4
 Parameter | Type | Value
 --------- | ---- | -----------
 `col` | number | `4`
-`theme` | string | `light`
+`theme` | string | `light` or `transparent`
 
 
 ```python title="Embed URL with option parameters"
