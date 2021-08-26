@@ -38,7 +38,7 @@ import TabItem from '@theme/TabItem';
 ```js
 import axios from 'axios'
 
-axios.get(`https://www.analogue.app/api/primers?username=${username}&tag=${tag}&limit=8&offset=0`)
+axios.get(`https://analogue.com/api/primers?username=${username}&tag=${tag}&limit=8&offset=0`)
 .then((response) => {
   // do something
 })
@@ -49,7 +49,7 @@ axios.get(`https://www.analogue.app/api/primers?username=${username}&tag=${tag}&
 <TabItem value="bash">
 
 ```bash
-curl https://www.analogue.app/api/primers?username=<username>&tag=<tag>&limit=8&offset=0
+curl https://analogue.com/api/primers?username=<username>&tag=<tag>&limit=8&offset=0
 ```
 
 </TabItem>
@@ -140,7 +140,7 @@ Grab your token using the [Authorization endpoint](auth/token.md).
 ```js
 import axios from 'axios'
 
-axios.get('https://www.analogue.app/user/primers')
+axios.get('https://analogue.com/user/primers')
 .then((response) => {
   // do something
 })
@@ -151,7 +151,7 @@ axios.get('https://www.analogue.app/user/primers')
 <TabItem value="bash">
 
 ```bash
-curl -H "authorization: Token <authToken>" https://www.analogue.app/user/primers
+curl -H "authorization: Token <authToken>" https://analogue.com/user/primers
 ```
 
 </TabItem>

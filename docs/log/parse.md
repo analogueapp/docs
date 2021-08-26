@@ -34,7 +34,7 @@ import TabItem from '@theme/TabItem';
 ```js
 import axios from 'axios'
 
-axios.post(`https://analogue.app/api/contents/parse?url=${url_to_parse}`, {
+axios.post(`https://analogue.com/api/contents/parse?url=${url_to_parse}`, {
     method: 'POST',
     headers: {
         authorization: `Token ${authToken}`,  
@@ -54,7 +54,7 @@ axios.post(`https://analogue.app/api/contents/parse?url=${url_to_parse}`, {
 curl \
   -H "authorization: Token <authToken>" \
   -X POST \
-  https://analogue.app/api/contents/parse?url=<url_to_parse>
+  https://analogue.com/api/contents/parse?url=<url_to_parse>
 ```
 
 </TabItem>

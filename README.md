@@ -1,6 +1,6 @@
-# Analogue API Documentation [![CodeFactor](https://www.codefactor.io/repository/github/analogue-app/docs/badge)](https://www.codefactor.io/repository/github/analogue-app/docs)
+# Analogue API Documentation [![CodeFactor](https://www.codefactor.io/repository/github/analogueapp/docs/badge)](https://www.codefactor.io/repository/github/analogueapp/docs)
 
-This is the public documentation for [**Analogue**](https://analogue.app), built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
+This is the public documentation for [**Analogue**](https://analogue.com), built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
 
 You can view this documentation at https://analogue.onrender.com/docs/api.
 

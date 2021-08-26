@@ -1,10 +1,10 @@
 module.exports = {
   title: 'Analogue',
   tagline: 'Documentation',
-  url: 'https://analogue.app',
+  url: 'https://analogue.com',
   baseUrl: '/',
   favicon: 'img/favicon.png',
-  organizationName: 'analogue-app', // Usually your GitHub org/user name.
+  organizationName: 'analogueapp', // Usually your GitHub org/user name.
   projectName: 'analogue', // Usually your repo name.
   themeConfig: {
     // TODO add algolia search
@@ -21,7 +21,7 @@ module.exports = {
       logo: {
         alt: 'Analogue',
         src: 'img/logo_icon.png',
-        href: 'https://analogue.app/about'
+        href: 'https://analogue.com/about'
       },
       links: [
         {
@@ -31,7 +31,7 @@ module.exports = {
           position: 'left',
         },
         {
-          href: 'https://github.com/analogue-app',
+          href: 'https://github.com/analogueapp',
           position: 'right',
           className: 'header-github-link',
           'aria-label': 'GitHub repository',
@@ -47,13 +47,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/analogue-app/docs/edit/master/',
+            'https://github.com/analogueapp/docs/edit/master/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/analogue-app/docs/edit/master/',
+            'https://github.com/analogueapp/docs/edit/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
