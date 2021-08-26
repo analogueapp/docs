@@ -10,10 +10,10 @@ To preview any embed, just add `/embed` to the end of any collection URL.
 
 ```python
 # Original collection URL
-https://www.analogue.app/collection/readings-4vyfd8
+https://analogue.com/collection/readings-4vyfd8
 
 # Embed URL
-https://www.analogue.app/collection/readings-4vyfd8/embed
+https://analogue.com/collection/readings-4vyfd8/embed
 ```
 
 ![Analogue collection embed example](https://analogue.onrender.com/img/embed.gif)
@@ -29,7 +29,7 @@ Parameter | Type | Value
 
 
 ```python title="Embed URL with option parameters"
-https://www.analogue.app/collection/readings-4vyfd8/embed?theme=light&col=4
+https://analogue.com/collection/readings-4vyfd8/embed?theme=light&col=4
 ```
 
 ### How to integrate into your site
@@ -55,7 +55,7 @@ import TabItem from '@theme/TabItem';
   <iframe
     frameBorder="0"
     allowFullScreen
-    src="https://www.analogue.app/collection/readings-4vyfd8/embed?theme=light&col=4"
+    src="https://analogue.com/collection/readings-4vyfd8/embed?theme=light&col=4"
     sandBox="allow-scripts allow-popups allow-top-navigation-by-user-activation allow-forms allow-same-origin"
     style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%" }}
   ></iframe>
@@ -73,7 +73,7 @@ const PageComponent = () => (
       <iframe
         frameBorder="0"
         allowFullScreen
-        src="https://www.analogue.app/collection/readings-4vyfd8/embed?theme=light&col=4"
+        src="https://analogue.com/collection/readings-4vyfd8/embed?theme=light&col=4"
         sandBox="allow-scripts allow-popups allow-top-navigation-by-user-activation allow-forms allow-same-origin"
         style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%" }}
       ></iframe>
@@ -93,7 +93,7 @@ export default PageComponent;
   <iframe
     frameborder="0"
     allowfullscreen
-    src="https://www.analogue.app/collection/readings-4vyfd8/embed?theme=light&col=4"
+    src="https://analogue.com/collection/readings-4vyfd8/embed?theme=light&col=4"
     sandbox="allow-scripts allow-popups allow-top-navigation-by-user-activation allow-forms allow-same-origin"
     style="position: absolute; left: 0; top: 0; width: 100%; height: 100%;"
   ></iframe>
@@ -111,7 +111,7 @@ export default PageComponent;
       <iframe
         frameborder="0"
         allowfullscreen
-        src="https://www.analogue.app/collection/readings-4vyfd8/embed?theme=light&col=4"
+        src="https://analogue.com/collection/readings-4vyfd8/embed?theme=light&col=4"
         sandbox="allow-scripts allow-popups allow-top-navigation-by-user-activation allow-forms allow-same-origin"
         style="position: absolute; left: 0; top: 0; width: 100%; height: 100%;"
       ></iframe>

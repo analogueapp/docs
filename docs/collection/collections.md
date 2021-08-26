@@ -30,7 +30,7 @@ import TabItem from '@theme/TabItem';
 ```js
 import axios from 'axios'
 
-axios.get(`https://analogue.app/api/profile/${username}/collections`)
+axios.get(`https://analogue.com/api/profile/${username}/collections`)
 .then((response) => {
   // do something
 })
@@ -41,7 +41,7 @@ axios.get(`https://analogue.app/api/profile/${username}/collections`)
 <TabItem value="bash">
 
 ```bash
-curl https://analogue.app/api/profile/<username>/collections
+curl https://analogue.com/api/profile/<username>/collections
 ```
 
 </TabItem>

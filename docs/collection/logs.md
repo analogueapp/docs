@@ -58,7 +58,7 @@ import TabItem from '@theme/TabItem';
 ```js
 import axios from 'axios'
 
-axios.get(`https://analogue.app/api/logs?username=${username}&medium=${medium}&limit=8&offset=0&collection=true`)
+axios.get(`https://analogue.com/api/logs?username=${username}&medium=${medium}&limit=8&offset=0&collection=true`)
 .then((response) => {
   // do something
 })
@@ -69,7 +69,7 @@ axios.get(`https://analogue.app/api/logs?username=${username}&medium=${medium}&l
 <TabItem value="bash">
 
 ```bash
-curl https://analogue.app/api/logs?username=<username>&medium=<medium>&limit=8&offset=0&collection=true
+curl https://analogue.com/api/logs?username=<username>&medium=<medium>&limit=8&offset=0&collection=true
 ```
 
 </TabItem>
@@ -91,7 +91,7 @@ Retreiving all logs for a specific `Primer`:
 ```js
 import axios from 'axios'
 
-axios.get(`https://analogue.app/api/logs?username=${username}&primer_slug=${primer_slug}&limit=8&offset=0`)
+axios.get(`https://analogue.com/api/logs?username=${username}&primer_slug=${primer_slug}&limit=8&offset=0`)
 .then((response) => {
   // do something
 })
@@ -102,7 +102,7 @@ axios.get(`https://analogue.app/api/logs?username=${username}&primer_slug=${prim
 <TabItem value="bash">
 
 ```bash
-curl https://analogue.app/api/logs?username=<username>&primer_slug=<primer_slug>&limit=8&offset=0
+curl https://analogue.com/api/logs?username=<username>&primer_slug=<primer_slug>&limit=8&offset=0
 ```
 
 </TabItem>

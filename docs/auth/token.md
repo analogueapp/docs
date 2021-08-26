@@ -42,7 +42,7 @@ import TabItem from '@theme/TabItem';
 import axios from 'axios'
 
 axios.post(
-  'https://analogue.app/api/users/login', // Endpoint
+  'https://analogue.com/api/users/login', // Endpoint
   {
     user: {
       email: `${your_email}`,
@@ -63,7 +63,7 @@ curl \
   -H 'Content-Type: application/json' \
   -X POST \
   -d '{"user": { "email" "<your_email>", "password": "<your_password>" }}' \
-  https://analogue.app/api/users/login
+  https://analogue.com/api/users/login
 ```
 
 </TabItem>
@@ -75,7 +75,7 @@ curl \
 {
   "user": {
     "id": 1,
-    "email": "user@analogue.app",
+    "email": "user@analogue.com",
     "username": "analogue",
     "name": "Analogue App",
     "bio": "Share what inspires you.",
@@ -102,7 +102,7 @@ For authorized endpoints, Analogue expects for the JWT `token` received from `Lo
 ```js
 import axios from 'axios'
 
-axios.post('https://analogue.app/api/<some_authed_endpoint>', payload, {
+axios.post('https://analogue.com/api/<some_authed_endpoint>', payload, {
   headers: { authorization: `Token ${authToken}` }
 })
 ```
@@ -115,7 +115,7 @@ axios.post('https://analogue.app/api/<some_authed_endpoint>', payload, {
 curl \
   -H "authorization: Token <authToken>" \
   -X POST \
-  https://analogue.app/api/<some_authed_endpoint>
+  https://analogue.com/api/<some_authed_endpoint>
 ```
 
 </TabItem>
